@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Lesson 12</title>
+</head>
+
+<body>
+   <script>
+
+      //задача 1
+
+      let numbers = prompt('Введите 2 числа, чтобы найти их среднее значение. Например: 2 5');
+      let results = numbers.split(' ');
+
+      function countAvarage() {
+         if (results.length > 2) {
+            alert('Вы должны ввести только 2 цифры');
+         } else {
+            let avarage = (Number(results[0]) + Number(results[1])) / 2;
+            console.log('Среднее значение:', avarage);
+         }
+      }
+      countAvarage();
+
+      //задача 2
+      let number = prompt('Введите 2 числа, чтобы получить остаток');
+      let result = number.split(' ');
+
+      function getRemainder() {
+         if (result.length > 2) {
+            alert('Вы должны ввести только 2 цифры');
+         } else {
+            let remainder = result[0] % result[1];
+            console.log('Остаток:', + remainder);
+         }
+      }
+      getRemainder();
+
+   </script>
+</body>
+
+</html>
